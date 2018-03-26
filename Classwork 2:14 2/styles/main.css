@@ -1,0 +1,86 @@
+/* Class notes
+ Height formula: TRBL top right bottom left, to adjust boarder elements-(margins: outside, padding: in between, height, width, border)  */
+
+/* general styles */
+* {
+margin:0;
+padding:0;
+} 
+
+html {
+background-color: white;
+}
+
+body { /*selector is for body, adjusting font, margin, and background */
+	font-size: 110%; /* font inc to 110% */
+	background-color: #afe0df; /* background color changes to light blue */
+	width: 700px;
+	margin: Auto;
+	border-top: 3px solid black;
+	border-right: 3px solid black;
+	border-bottom: 3px solid black;
+	border-left: 3px solid black;
+	/* border: 3px solid black */
+	}
+	
+/* styles for header */
+header { /* type selecter */
+	text-align: center; /*header shifts to center*/
+	/* border: 2px solid black; /* 2 pixel black border border around header */
+	border-bottom: 3px solid black; 
+	height: 356px; /* object (350) + border1 (3) + border2 (3) = 356 */
+	background-image: -webkit-linear-gradient (
+	60deg, red 0%, white 50%, blue 100%);
+	}
+
+h1+img { /* sibling selector */
+	margin: .5em; /* heading one and the image indent by .5 */
+	}
+	
+header img {
+	float: right;
+	}
+
+h1, h2{ /* multiple selector */
+	color: navy /* heading one and heading two change to the color navy */
+	padding-top: 2em;
+	}
+
+/* styles for main */
+main li { /* descendant selector */
+	fontsize: 125%; /* bullet point size inc to 125% */
+	list-style-type: square; /* bullet points change from circle to square */
+	}
+	
+main p { /* new: decending selector old: main>p is child selector*/
+	text-size: 125%; /* The text in the main paragraph increases to 125% */
+	/* padding-left: .75em;
+	padding-right: .75em;
+	padding-bottom: .75em;
+	padding-top: .75em */
+	/* padding: .5em .25em .15em .2em /* top right bottom left */
+	padding: .75em;
+	}
+
+main ul {
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+
+.large { /*class selector */
+	font-size: 150%; /* The font division in the bullet point section increased to 150% */
+	}
+
+a:link { /* psuedo selector */
+	color: green; /* The link changes to the color green */
+	}
+
+a:hover { /*psuedo selector */
+	color: blue; /* When you hover over the link, it changes to blue */
+	}
+	
+	
+#copyright { /* id selector */
+	text-align: center; /* move copyright info to center */
+	}	
